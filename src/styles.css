@@ -1,0 +1,128 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* Custom css */
+
+/* Global */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  @apply m-0 bg-white font-primary;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.pointer {
+  @apply cursor-pointer;
+}
+
+button.btn {
+  @apply min-w-150px mt-10px mb-20px p-20px text-white text-center font-primary font-bold;
+  @apply rounded-5px border-none;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  background: linear-gradient(-60deg, #cb1a8f, #fc02a7);
+}
+
+button.btn:hover {
+  @apply opacity-80 text-white cursor-pointer;
+}
+
+button.btn:focus {
+  outline: none;
+}
+
+button.btn:disabled {
+  @apply pointer-events-none;
+  transition: none !important;
+  background: #b7b7b7 !important;
+}
+
+button.btn.modal {
+  @apply min-w-150px mt-30px mb-20px p-20px text-white text-center font-bold;
+  @apply rounded-5px border-none bg-100pc;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  background: linear-gradient(-60deg, #CB1A8F, #FC02A7);
+}
+
+button.buttonModal:hover {
+  opacity: 0.8;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.buttonModal:focus {
+  outline: none;
+}
+
+button.buttonModal:disabled {
+  pointer-events: none;
+}
+
+.content {
+  @apply flex flex-col items-center w-96pc m-auto max-w-1280px;
+}
+
+.hamburger {
+  @apply border-none no-underline p-0 ml-20px;
+  :hover {
+    outline: none;
+  }
+  :focus {
+    outline: none;
+  }
+}
+
+.identicon {
+  @apply h-4 w-4 border-half bg-blue;
+}
+
+.smalltext {
+  @apply font-primary text-center text-almostverysmall font-regular;
+}
+.title {
+  @apply w-100pc my-2pc p-0 text-center font-primary text-black text-ratherbig-mobile font-bolder leading-tight;
+}
+
+.none {
+  display: none;
+}
+
+.normal-text {
+  @apply text-center font-primary text-black text-prettysmall font-light p-0 leading-normal mb-5pc;
+}
+
+.slider-wrapper {
+  @apply w-100pc mt-3pc mr-0 mb-5pc ml-0;
+}
+
+/* TopNavigation */
+
+.nav-container {
+  @apply font-secondary flex py-20px overflow-hidden w-96pc m-auto max-w-1280px;
+}
+
+.nav-container .left {
+  @apply flex flex-grow items-center;
+}
+
+.nav-container .right {
+  @apply flex flex-grow items-center justify-end;
+}
+
+.nav-container .right .link {
+  @apply text-almost-black no-underline ml-8 text-prettysmall;
+}
+
+.nav-container .right .link:hover {
+  @apply opacity-60;
+}

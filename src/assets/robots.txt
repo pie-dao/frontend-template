@@ -1,0 +1,3 @@
+# robots.txt for https://piedao.org/
+User-agent: *
+Sitemap: https://piedao.org/sitemap.xml
