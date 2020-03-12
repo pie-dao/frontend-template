@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 /* Custom css */
+/* purgecss start ignore */
 
 /* Global */
 
@@ -126,3 +127,5 @@ button.buttonModal:disabled {
 .nav-container .right .link:hover {
   @apply opacity-60;
 }
+
+/* purgecss end ignore */
