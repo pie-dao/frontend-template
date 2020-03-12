@@ -4,19 +4,19 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { store, view } from 'react-easy-state';
 
-const topNavigationStore = store({
+const headerStore = store({
   toggle: () => {
-    topNavigationStore.mobileMenuVisible = !topNavigationStore.mobileMenuVisible;
+    headerStore.mobileMenuVisible = !headerStore.mobileMenuVisible;
   },
   mobileMenuVisible: false,
 });
 
-const TopNavigation = ({ images }) => {
+const Header = ({ images }) => {
   const { logo } = images;
 
-  const { mobileMenuVisible } = topNavigationStore;
+  const { mobileMenuVisible } = headerStore;
   return (
-    <div className="nav-container">
+    <div className="header-container">
       <div className="left">
         <Link to="/">
           <img src={logo} height="30" width="auto" className="h-30px lg:h-50px" alt="Logo" />
@@ -45,7 +45,7 @@ const TopNavigation = ({ images }) => {
           className="hamburger lg:hidden"
           id="trigger-overlay"
           type="button"
-          onClick={topNavigationStore.toggle}
+          onClick={headerStore.toggle}
         >
           <img src="./assets/img/hamburgerIcon.svg" height="19" alt="hamburger icon" className="w-min-20px" />
         </button>
@@ -54,7 +54,7 @@ const TopNavigation = ({ images }) => {
             <button
               type="button"
               className="overlay-close"
-              onClick={topNavigationStore.toggle}
+              onClick={headerStore.toggle}
             >
               Close
             </button>
@@ -62,7 +62,7 @@ const TopNavigation = ({ images }) => {
               <ul>
                 <li>
                   <Link
-                    onClick={topNavigationStore.toggle}
+                    onClick={headerStore.toggle}
                     to="/"
                   >
                     home
@@ -70,7 +70,7 @@ const TopNavigation = ({ images }) => {
                 </li>
                 <li>
                   <a
-                    onClick={topNavigationStore.toggle}
+                    onClick={headerStore.toggle}
                     className="navbar-item"
                     href="https://docs.piedao.org/"
                     target="_blank"
@@ -81,7 +81,7 @@ const TopNavigation = ({ images }) => {
                 </li>
                 <li>
                   <a
-                    onClick={topNavigationStore.toggle}
+                    onClick={headerStore.toggle}
                     className="navbar-item"
                     href="https://pie283460.typeform.com/to/uy9NZt"
                     target="_blank"
@@ -99,10 +99,10 @@ const TopNavigation = ({ images }) => {
   );
 };
 
-TopNavigation.propTypes = {
+Header.propTypes = {
   images: PropTypes.shape({
     logo: PropTypes.string.isRequired,
   }).isRequired,
 };
 
-export default view(TopNavigation);
+export default view(Header);

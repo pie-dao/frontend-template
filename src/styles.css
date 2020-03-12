@@ -88,6 +88,20 @@ button.buttonModal:disabled {
 }
 
 .smalltext {
+    borderRadius: {
+      'none': '0',
+      'sm': '1rem',
+      'default': '2rem',
+      'md': '2.5rem',
+      'lg': '4rem',
+      '3px': '3px',
+      '4px': '4px',
+      '5px': '5px',
+      '6px': '6px',
+      '30px': '30px',
+      '50px': '50px',
+      '50pc': '50%',
+    },
   @apply font-primary text-center text-almostverysmall font-regular;
 }
 .title {
@@ -106,25 +120,25 @@ button.buttonModal:disabled {
   @apply w-100pc mt-3pc mr-0 mb-5pc ml-0;
 }
 
-/* TopNavigation */
+/* Header */
 
-.nav-container {
+.header-container {
   @apply font-secondary flex py-20px overflow-hidden w-96pc m-auto max-w-1280px;
 }
 
-.nav-container .left {
+.header-container .left {
   @apply flex flex-grow items-center;
 }
 
-.nav-container .right {
+.header-container .right {
   @apply flex flex-grow items-center justify-end;
 }
 
-.nav-container .right .link {
+.header-container .right .link {
   @apply text-almost-black no-underline ml-8 text-prettysmall;
 }
 
-.nav-container .right .link:hover {
+.header-container .right .link:hover {
   @apply opacity-60;
 }
 
