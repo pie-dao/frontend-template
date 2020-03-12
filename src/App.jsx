@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import { view } from 'react-easy-state';
 
+import Footer from './components/Footer';
 import Routes from './Routes';
 import TopNavigation from './components/TopNavigation';
 
@@ -14,6 +15,7 @@ const App = (props) => (
     <div className="App">
       <TopNavigation {...props} />
       <Routes {...props} />
+      <Footer {...props} />
     </div>
   </Router>
 );

@@ -128,4 +128,45 @@ button.buttonModal:disabled {
   @apply opacity-60;
 }
 
+
+/* Footer */
+
+.footer-container {
+  @apply font-secondary flex flex-row py-20px overflow-hidden w-96pc m-auto max-w-1280px;
+}
+
+.footer-container .left {
+  @apply flex flex-row flex-grow items-center;
+}
+
+.footer-container .right {
+  @apply flex flex-row flex-grow items-center justify-end;
+}
+
+.footer-link {
+  @apply text-almost-black no-underline mt-14px text-verysmall;
+}
+
+.footer-link:hover {
+  @apply opacity-60;
+}
+
+.footer-container .aragon {
+  @apply h-30px mt-10px;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-container .left {
+    flex-direction: column;
+  }
+
+  .footer-container .right {
+    flex-direction: column;
+  }
+}
+
 /* purgecss end ignore */
