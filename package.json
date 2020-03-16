@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "main": "src/index.jsx",
+  "homepage": "./",
   "scripts": {
-    "analyze": "yarn profile && webpack-bundle-analyzer stats.json",
+    "analyze": "yarn profile && yarn analyzer",
+    "analyzer": "webpack-bundle-analyzer stats.json",
     "build": "yarn clean && yarn compile",
     "clean": "rimraf build && rimraf stats.json",
     "compile": "webpack --mode production --config config/production/webpack.js",
@@ -49,7 +51,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "@pie-dao/tailwind": "^1.0.0",
+    "@pie-dao/tailwind": "^1.1.0",
     "bignumber.js": "^9.0.0",
     "history": "^4.10.1",
     "prop-types": "^15.7.2",

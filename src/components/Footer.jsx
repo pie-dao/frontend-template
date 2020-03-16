@@ -6,67 +6,61 @@ const year = (new Date()).getFullYear();
 const Footer = () => (
   <div className="footer-container">
     <div className="left">
-      <span className="footer-link lg:block">
+      <span className="footer-link">
         PieDAO&nbsp;
         { year }
       </span>
     </div>
-    <div className="right lg:ml-8">
+    <div className="right">
       <a
-        className="footer-link lg:block"
+        className="footer-link"
         href="https://discord.gg/eJTYNUF"
         target="_blank"
         rel="noopener noreferrer"
       >
         Discord
       </a>
-      &nbsp;
       <a
-        className="footer-link lg:ml-8"
+        className="footer-link"
         href="https://twitter.com/PieDAO_DeFi?s=20"
         target="_blank"
         rel="noopener noreferrer"
       >
         Twitter
       </a>
-      &nbsp;
       <a
-        className="footer-link lg:ml-8"
+        className="footer-link"
         href="https://medium.com/piedao"
         target="_blank"
         rel="noopener noreferrer"
       >
         Medium
       </a>
-      &nbsp;
       <a
-        className="footer-link lg:ml-8"
+        className="footer-link"
         href="https://forum.piedao.org/"
         target="_blank"
         rel="noopener noreferrer"
       >
         Forum
       </a>
-      &nbsp;
       <a
-        className="footer-link lg:ml-8"
+        className="footer-link"
         href="https://docs.piedao.org/"
         target="_blank"
         rel="noopener noreferrer"
       >
         Documentation
       </a>
-      &nbsp;
       <a
-        className="footer-link lg:ml-8"
+        className="footer-link"
         href="hhttps://github.com/pie-dao/"
         target="_blank"
         rel="noopener noreferrer"
       >
         Github
       </a>
-      &nbsp;
-      <img src="/assets/img/aragon.svg" className="aragon lg:ml-20px lg:mt-0" alt="Argon" />
+      <img src="./assets/img/aragon.svg" className="aragon" alt="Aragon" />
     </div>
   </div>
 );

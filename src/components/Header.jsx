@@ -19,12 +19,12 @@ const Header = ({ images }) => {
     <div className="header-container">
       <div className="left">
         <Link to="/">
-          <img src={logo} height="30" width="auto" className="h-30px lg:h-50px" alt="Logo" />
+          <img src={logo} alt="Logo" />
         </Link>
       </div>
       <div className="right">
         <a
-          className="link hidden lg:block"
+          className="link"
           href="https://docs.piedao.org/"
           target="_blank"
           rel="noopener noreferrer"
@@ -32,22 +32,17 @@ const Header = ({ images }) => {
           docs
         </a>
         <a
-          className="link hidden lg:block"
+          className="link"
           href="https://pie283460.typeform.com/to/uy9NZt"
           target="_blank"
           rel="noopener noreferrer"
         >
           whitepaper
         </a>
-        <div className="hidden lg:block" />
+        <div className="mobile-placeholder" />
 
-        <button
-          className="hamburger lg:hidden"
-          id="trigger-overlay"
-          type="button"
-          onClick={headerStore.toggle}
-        >
-          <img src="./assets/img/hamburgerIcon.svg" height="19" alt="hamburger icon" className="w-min-20px" />
+        <button className="hamburger" type="button" onClick={headerStore.toggle}>
+          <img src="./assets/img/hamburgerIcon.svg" alt="hamburger icon" className="w-min-20px" />
         </button>
         {mobileMenuVisible && (
           <div className="overlay overlay-hugeinc open">
