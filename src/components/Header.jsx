@@ -45,12 +45,8 @@ const Header = ({ images }) => {
           <img src="./assets/img/hamburgerIcon.svg" alt="hamburger icon" className="w-min-20px" />
         </button>
         {mobileMenuVisible && (
-          <div className="overlay overlay-hugeinc open">
-            <button
-              type="button"
-              className="overlay-close"
-              onClick={headerStore.toggle}
-            >
+          <div className="overlay">
+            <button type="button" className="close" onClick={headerStore.toggle}>
               Close
             </button>
             <nav>

@@ -9,12 +9,6 @@
 /* Custom css */
 /* purgecss start ignore */
 
-/* Global */
-
-.overlay {
-  @apply w-full h-full bg-white;
-}
-
 /* Header */
 
 .header-container {
@@ -51,6 +45,32 @@
 
 .header-container .right .mobile-placeholder {
   @apply hidden;
+}
+
+.header-container nav {
+  @apply text-center relative top-60pc no-underline;
+  /* font-size: 1.2rem; */
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.header-container ul {
+  @apply list-none p-0 my-0 mx-auto inline-block h-100pc relative;
+}
+
+.header-container ul li {
+  @apply block h-20pc min-h-54px;
+}
+
+.header-container ul li a {
+  @apply font-normal block text-white no-underline;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.header-container ul li a:hover,
+.header-container ul li a:focus {
+  @apply text-white;
 }
 
 @screen lg {

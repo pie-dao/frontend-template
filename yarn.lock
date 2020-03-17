@@ -835,10 +835,10 @@
   resolved "https://registry.yarnpkg.com/@nx-js/observer-util/-/observer-util-4.2.2.tgz#faea1bc61936653486d1b5dec7485220991e628d"
   integrity sha512-9OayX1xkdGjdnsDiO2YdaYJ6aMyCF7/NY4QWVgIgjSAZJ4OX2fD766Ts79hEzBscenQy2DCaSoY8VkguIMB1ZA==
 
-"@pie-dao/tailwind@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@pie-dao/tailwind/-/tailwind-1.1.0.tgz#f79063b30367ba19b4dda19176f06ca82042d638"
-  integrity sha512-fklnMKnqIVUKGqIlBBJ6DBVR+gVABGeXbEHNPpJ4JhtNLNK87al4YASssbL3bD/K9oH4lP+K7m338LT2EX6Ivg==
+"@pie-dao/tailwind@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@pie-dao/tailwind/-/tailwind-1.1.1.tgz#6f7fd24327b0507ee1e5f9566f8d1807d473dbb6"
+  integrity sha512-OYdGncpGVWcqMV5SmN7R0rsenuOhWGsFEPMyqz+mLyVKxUbQnL0pmaZdMudJwNg+DMcwuXbRDlkMSKxHaYI7Qw==
   dependencies:
     bignumber.js "^9.0.0"
     tailwindcss "^1.2.0"
