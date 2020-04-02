@@ -1,7 +1,7 @@
 /* eslint arrow-body-style: 0 */
 
 import React from 'react';
-import { view } from 'react-easy-state';
+import { view } from '@risingstack/react-easy-state';
 
 const Landing = () => {
   return (

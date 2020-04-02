@@ -2,7 +2,7 @@ import React from 'react';
 
 import { BrowserRouter as Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
-import { view } from 'react-easy-state';
+import { view } from '@risingstack/react-easy-state';
 
 import Header from './components/Header';
 import Footer from './components/Footer';

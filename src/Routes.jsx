@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Switch, Route } from 'react-router-dom';
-import { view } from 'react-easy-state';
+import { view } from '@risingstack/react-easy-state';
 
 import Landing from './pages/Landing';
 
